@@ -1,10 +1,4 @@
-import { Bell, ChevronDown } from "lucide-react";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "../components/ui/card";
+import { ChevronDown } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Badge } from "../components/ui/badge";
 import {
@@ -13,9 +7,7 @@ import {
   TabsTrigger,
   TabsContent,
 } from "../components/ui/tabs";
-import clsx from "clsx";
 import { useState } from "react";
-import { DotFilledIcon } from "@radix-ui/react-icons";
 import { Separator } from "@radix-ui/react-separator";
 
 const JobPostingUI = () => {
