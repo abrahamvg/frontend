@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans/GeneralSans-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans/GeneralSans-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans/GeneralSans-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans/GeneralSans-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans/GeneralSans-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans/GeneralSans-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans/GeneralSans-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans/GeneralSans-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans/GeneralSans-SemiboldItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans/GeneralSans-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
