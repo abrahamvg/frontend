@@ -11,22 +11,28 @@ import { useState } from "react";
 import { Separator } from "@radix-ui/react-separator";
 
 // Import images
-import logoImg from '../src/images/logos/logo.png';
-import bgImg from '../src/images/png/bg.png';
-import figmaImg from '../src/images/png/figma.png';
-import illustratorImg from '../src/images/png/illustrator.png';
-import adobeXDImg from '../src/images/png/adobeXD.png';
+import logoImg from "../src/images/logos/logo.png";
+import bgImg from "../src/images/png/bg.png";
+import figmaImg from "../src/images/png/figma.png";
+import illustratorImg from "../src/images/png/illustrator.png";
+import adobeXDImg from "../src/images/png/adobeXD.png";
 
-import  locationIcon from '../src/images/svg/location.svg';
-import  salaryIcon from '../src/images/svg/salary.svg';
-import  bellIcon from '../src/images/svg/bell.svg';
-import  deleteIcon from '../src/images/svg/delete.svg';
-import  editIcon from '../src/images/svg/edit.svg';
-import  applicantsIcon from '../src/images/svg/applicants.svg';
-import  matchesIcon from '../src/images/svg/matches.svg';
-import  messagesIcon from '../src/images/svg/messages.svg';
-import  viewsIcon from '../src/images/svg/views.svg';
+import locationIcon from "../src/images/svg/location.svg";
+import salaryIcon from "../src/images/svg/salary.svg";
+import bellIcon from "../src/images/svg/bell.svg";
+import deleteIcon from "../src/images/svg/delete.svg";
+import editIcon from "../src/images/svg/edit.svg";
+import applicantsIcon from "../src/images/svg/applicants.svg";
+import matchesIcon from "../src/images/svg/matches.svg";
+import messagesIcon from "../src/images/svg/messages.svg";
+import viewsIcon from "../src/images/svg/views.svg";
 
+import jobsActiveIcon from "../src/images/svg/jobs-active.svg";
+import jobsInactiveIcon from "../src/images/svg/jobs-inactive.svg";
+import messagesActiveIcon from "../src/images/svg/messages-active.svg";
+import messagesInactiveIcon from "../src/images/svg/messages-inactive.svg";
+import paymentsActiveIcon from "../src/images/svg/payments-active.svg";
+import paymentsInactiveIcon from "../src/images/svg/payments-inactive.svg";
 
 const JobPostingUI = () => {
   const innerOptions = [
@@ -37,9 +43,21 @@ const JobPostingUI = () => {
   ];
 
   const outerOptions = [
-    { optionName: "Jobs", value: "jobs" },
-    { optionName: "Messages", value: "messages" },
-    { optionName: "Payments", value: "payments" },
+    {
+      optionName: "Jobs",
+      value: "jobs",
+      icons: { active: jobsActiveIcon, inactive: jobsInactiveIcon },
+    },
+    {
+      optionName: "Messages",
+      value: "messages",
+      icons: { active: messagesActiveIcon, inactive: messagesInactiveIcon },
+    },
+    {
+      optionName: "Payments",
+      value: "payments",
+      icons: { active: paymentsActiveIcon, inactive: paymentsInactiveIcon },
+    },
   ];
 
   const [active, setActive] = useState("preview");
@@ -68,12 +86,11 @@ const JobPostingUI = () => {
                 >
                   <div className="relative">
                     <img
-                      src={`../src/images/svg/${
-                        option.value +
-                        (option.value === outerOptionsActive
-                          ? "-active"
-                          : "-inactive")
-                      }.svg`}
+                      src={
+                        option.value === outerOptionsActive
+                          ? option.icons.active
+                          : option.icons.inactive
+                      }
                       className="inline mr-2 w-4"
                       alt={option.value}
                     />
@@ -437,7 +454,7 @@ const JobPostingUI = () => {
               </main>
             </TabsContent>
 
-            <TabsContent value="messages" >
+            <TabsContent value="messages">
               <div className="bg-whit p-6 min-h-screen">
                 <h2 className="text-2xl font-bold mb-4">Messages</h2>
                 <p>Messages content goes here.</p>
