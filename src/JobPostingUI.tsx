@@ -10,6 +10,24 @@ import {
 import { useState } from "react";
 import { Separator } from "@radix-ui/react-separator";
 
+// Import images
+import logoImg from '../src/images/logos/logo.png';
+import bgImg from '../src/images/png/bg.png';
+import figmaImg from '../src/images/png/figma.png';
+import illustratorImg from '../src/images/png/illustrator.png';
+import adobeXDImg from '../src/images/png/adobeXD.png';
+
+import  locationIcon from '../src/images/svg/location.svg';
+import  salaryIcon from '../src/images/svg/salary.svg';
+import  bellIcon from '../src/images/svg/bell.svg';
+import  deleteIcon from '../src/images/svg/delete.svg';
+import  editIcon from '../src/images/svg/edit.svg';
+import  applicantsIcon from '../src/images/svg/applicants.svg';
+import  matchesIcon from '../src/images/svg/matches.svg';
+import  messagesIcon from '../src/images/svg/messages.svg';
+import  viewsIcon from '../src/images/svg/views.svg';
+
+
 const JobPostingUI = () => {
   const innerOptions = [
     { optionName: "Job preview", value: "preview" },
@@ -77,7 +95,7 @@ const JobPostingUI = () => {
           <div className="flex items-center space-x-4">
             <div className="w-6 h-6 relative">
               <img
-                src="../src/images/svg/bell.svg"
+                src={bellIcon}
                 className="inline mr-2 w-full h-full"
                 alt="bell"
               />
@@ -90,7 +108,7 @@ const JobPostingUI = () => {
             <Button variant="outline" className="flex items-center">
               <div className="w-8 h-8 bg-blue-500 rounded-full mr-2 overflow-hidden">
                 <img
-                  src="../src/images/logos/logo.png"
+                  src={logoImg}
                   className="inline mr-2 w-full h-full"
                   alt="logo"
                 />
@@ -132,7 +150,7 @@ const JobPostingUI = () => {
                 <div
                   className="w-4/5 border-r-[0.5px] border-neutral-200 pl-28"
                   style={{
-                    backgroundImage: "url(../src/images/png/bg.png)",
+                    backgroundImage: `url("${bgImg}")`,
                   }}
                 >
                   <div className="mt-6 flex justify-between items-start">
@@ -156,7 +174,7 @@ const JobPostingUI = () => {
                         <div className="flex items-center text-gray-500 mb-8 mt-6">
                           <div className="mr-4 flex flex-row items-center">
                             <img
-                              src="../src/images/svg/location.svg"
+                              src={locationIcon}
                               className="inline mr-3"
                               alt="location"
                             />
@@ -167,7 +185,7 @@ const JobPostingUI = () => {
                           <div className="w-1 h-1 rounded-full bg-neutral-200 mr-4"></div>
                           <div className="flex flex-row items-center">
                             <img
-                              src="../src/images/svg/salary.svg"
+                              src={salaryIcon}
                               className="inline mr-3"
                               alt="salary"
                             />
@@ -183,7 +201,7 @@ const JobPostingUI = () => {
                           <div className="flex flex-col gap-2">
                             <div className="w-fit font-medium text-[#344054] text-xs border-[1px] border-neutral-200 rounded-[6px] py-1 px-2">
                               <img
-                                src="../src/images/png/figma.png"
+                                src={figmaImg}
                                 className="inline mr-2 w-4"
                                 alt="figma"
                               />
@@ -191,7 +209,7 @@ const JobPostingUI = () => {
                             </div>
                             <div className="w-fit font-medium text-[#344054] text-xs border-[1px] border-neutral-200 rounded-[6px] py-1 px-2">
                               <img
-                                src="../src/images/png/illustrator.png"
+                                src={illustratorImg}
                                 className="inline mr-2 w-4"
                                 alt="illustrator"
                               />
@@ -199,7 +217,7 @@ const JobPostingUI = () => {
                             </div>
                             <div className="w-fit font-medium text-[#344054] text-xs border-[1px] border-neutral-200 rounded-[6px] py-1 px-2">
                               <img
-                                src="../src/images/png/adobeXD.png"
+                                src={adobeXDImg}
                                 className="inline mr-2 w-4"
                                 alt="adobeXD"
                               />
@@ -291,7 +309,7 @@ const JobPostingUI = () => {
                     <div className="flex items-center mb-4">
                       <div className="w-8 h-8 bg-blue-500 rounded-sm mr-2 overflow-hidden">
                         <img
-                          src="../src/images/logos/logo.png"
+                          src={logoImg}
                           className="inline mr-2 w-full h-full"
                           alt="logo"
                         />
@@ -349,7 +367,7 @@ const JobPostingUI = () => {
                     <div className="flex flex-row gap-2 mb-6">
                       <Button className="rounded-lg w-full bg-[#FEF4F2] border-[0.8px] border-[#DC4A2D] text-[#DC4A2D]">
                         <img
-                          src="../src/images/svg/delete.svg"
+                          src={deleteIcon}
                           className="inline mr-3"
                           alt="delete"
                         />
@@ -357,7 +375,7 @@ const JobPostingUI = () => {
                       </Button>
                       <Button className="rounded-lg w-full bg-[#DC4A2D] border-2 border-[#FED3CA] text-white">
                         <img
-                          src="../src/images/svg/edit.svg"
+                          src={editIcon}
                           className="inline mr-3"
                           alt="edit"
                         />
@@ -369,7 +387,7 @@ const JobPostingUI = () => {
                       <div className="flex justify-between items-center mb-2">
                         <div>
                           <img
-                            src="../src/images/svg/applicants.svg"
+                            src={applicantsIcon}
                             className="inline mr-3"
                             alt="applicants"
                           />
@@ -381,7 +399,7 @@ const JobPostingUI = () => {
                       <div className="flex justify-between items-center mb-2">
                         <div>
                           <img
-                            src="../src/images/svg/matches.svg"
+                            src={matchesIcon}
                             className="inline mr-3"
                             alt="matches"
                           />
@@ -393,7 +411,7 @@ const JobPostingUI = () => {
                       <div className="flex justify-between items-center mb-2">
                         <div>
                           <img
-                            src="../src/images/svg/messages.svg"
+                            src={messagesIcon}
                             className="inline mr-3"
                             alt="messages"
                           />
@@ -405,7 +423,7 @@ const JobPostingUI = () => {
                       <div className="flex justify-between items-center">
                         <div>
                           <img
-                            src="../src/images/svg/views.svg"
+                            src={viewsIcon}
                             className="inline mr-3"
                             alt="views"
                           />
